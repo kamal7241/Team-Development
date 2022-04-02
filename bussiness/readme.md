@@ -1,188 +1,82 @@
 # Agenda  
 
-## Career Path
+- Experence Criteria
+- Assesments
+- Weekly Tasks
+- Weekly Sessions Plans
+- How To Seek a jop
+- Freelancing
+
+## Experence Criteria
 
 - each stage requirments Knowledge , skills , expected Salaries
   - Frontend , Backend , mobile
-    - junior
-      - requirements(skills , knowledge , practise )
-        - skills :
-          - sync with team
-          - reporting
-          - commitment
-        - knowledge :
-          - Ui (html , **css** )
-          - vanilla js ( scripting)
-          - bonus framework
-      - experience : 0 - 1 year
-      - period ( 2 - 3  )
-      - salaries ( start - end )
-            - 8000 - 12000 rate : 1300 / per year
-            - 6000 - 13000 rate : 2300 / per year
-            - 6000 - 12000 rate : 2000 / per year
-            - 9000 - 12000 rate : 1000 / per year
 
-- senior
-  - requirements(skills , knowledge , practise )
-    - skills
-      - time management
-        - salma 7
-        - engy 5
-        - basma 3
-        - kamal 6 - 7
-        - magdy 5
-      - support team and find solutions
-        - engy 7
-        - salma 6
-        - kamal 9
-        - basma 6
-        - magdy 8
-      - reporting
-        - engy  9
-        - salma 8
-        - kamal 7
-        - basma 6
-        - magdy 7
-    - searching ( keyword )
-      - salma 8
-      - kamal 8
-      - magdy 8
-      - basma 4
-    - problem solving ( problem analysis  , unexpected issues (workarounds) )
-      - how to improve
-        - practise ( works , problem solving sites )
-        - knowledge ... pattern , framework , articles , style , backend , AI
-        - exposing to others code and implementation (libraries )
-        - stackoverflow questions
-      - engy  ( 7 , 7 )
-      - salma ( 7 , 5 )
-      - kamal ( 8 , 8 )
-      - basma ( 7 , 5 )
-      - magdy ( 6 , 6 )
+### Junior
+
+- requirements(skills , knowledge , practise )
+  - skills :
     - sync with team
-      - engy
-      - salma 6
-      - kamal 6
-      - basma 7
-      - magdy 4
-    - end to end test .. perfect >>> Unit Test >>> Integration Test >>> End to End Test >> Ui Test
-      - engy
-      - salma 8
-      - basma 8
-      - magdy 7
-      - kamal 7
-    - knowledge :
-      - Ui (html , **css** , ) expert
-            - html , **css**
-                - engy
-                - salma 4  
-                - basma
-                - magdy 6
-                - kamal 8
-            - sass , less is must
-                - magdy 7
-                - kamal 8
-      - vanilla js ( scripting) expert
-            - kamal 8
-            - magdy 7
-            - basma 6
-            - salma 6
-            - engy
-      - framework is must
-        - Angular ( Lazyloading , global state management ,  )
-          - basma 5
-          - engy  
-          - salma
-          - kamal 5
-          - magdy 6
-        - Vue
-          - basma
-          - salma
-          - kamal 7
-          - magdy
-        - React
-          - basma 6
-          - salma
-          - kamal 6
-          - magdy 7
-      - best implementation patterns ( data strcture , algorithms)
-        - Singelton , Strategy , Iterator , Observer , Factory , Decorator
-        - Design Pattern
-          - Structure
-            - magdy 4
-            - basma
-            - kamal 8
-            - salma 4
-          - Arch ( mvc  , micro services)
-            - magdy 4
-            - basma
-            - salma
-            - kamal 6
-      - git expert
-        - basic commands (git init , git log , git clone , git commit , git push , git pull , git remote , git checkout , git stash , git config , git diff , git add , git merge )
-        - advanced Commands :
-          git rebase , git reset , git revert , git gc , git prune , git amend , bash script , git cherrypick
-          - magdy 7
-          - kamal 8
-          - fatma 7
-          - engy 7
-      - familiar with webpack and gulp is must
-        - magdy 5
-        - fatma 5
-        - kamal 7
-        - engy  5
-      - familiar with agile is a must
-        - magdy 7
-        - kamal 7
-        - engy 6
-        - fatma 5
-      - cms integration ( content management system )
-        - magdy
-        - fatma
-        - engy
-        - kamal 6
-    - experience : 3 - 5 year
-    - period (  3 - 5  )
-    - salaries ( start - end )
-            - kamal 15000 - 30000
-            - magdy
-            - fatma
-            - engy
+    - reporting
+    - commitment
+  - knowledge :
+    - Ui (html , **css** )
+    - vanilla js ( scripting)
+    - bonus framework
+- experience : 0 - 1 year
+- period ( 2 - 3  )
+- salaries ( start - end )
+      - 8000 - 12000 rate : 1300 / per year
+      - 6000 - 13000 rate : 2300 / per year
+      - 6000 - 12000 rate : 2000 / per year
+      - 9000 - 12000 rate : 1000 / per year
 
-  - lead
-  - manager
+### Senior
 
-  - what you own of Knowledge and Skills
-  - what is the plan to next stage
-  - Companies List (Categorized)
-    - TrianglZ LLC
-    - TurnDigital
-    - NAOS Marketing
-    -
-
-  - freelancing
-    - manhr : 20$
-    - portfolio
-    - templates
-
-  - as a Group what is our Purpose and Plan of weekly session
-
-  - Frontend
-  - Ui
-  - sass
-  - tools : webpack , gulp
-  -
-  - Backend
-    - technology
-
+- requirements(skills , knowledge , practise )
   - skills
+    - time management
+    - support team and find solutions
+    - reporting
+  - searching ( keyword )
+    - basma 4
+  - problem solving ( problem analysis  , unexpected issues (workarounds) )
+    - how to improve
+      - practise ( works , problem solving sites )
+      - knowledge ... pattern , framework , articles , style , backend , AI
+      - exposing to others code and implementation (libraries )
+      - stackoverflow questions
+  - sync with team
+  - end to end test .. perfect >>> Unit Test >>> Integration Test >>> End to End Test >> Ui Test
+  - knowledge :
+    - Ui (html , **css** , ) expert
+            - html , **css**
+            - sass , less is must
+    - vanilla js ( scripting) expert
+    - framework is must
+      - Angular ( Lazyloading , global state management ,  )
+      - Vue
+      - React
+    - best implementation patterns ( data strcture , algorithms)
+      - Singelton , Strategy , Iterator , Observer , Factory , Decorator
+      - Design Pattern
+        - Structure
+        - Arch ( mvc  , micro services)
+    - git expert
+      - basic commands (git init , git log , git clone , git commit , git push , git pull , git remote , git checkout , git stash , git config , git diff , git add , git merge )
+      - advanced Commands :
+          git rebase , git reset , git revert , git gc , git prune , git amend , bash script , git cherrypick
+    - familiar with webpack and gulp is must
+    - familiar with agile is a must
+    - cms integration ( content management system )
+  - experience : 3 - 5 year
+  - period (  3 - 5  )
+  - salaries ( start - end )
+            - 15000 - 30000
 
-  - knowledge
+- lead
+- manager
 
-- freelancing
-
-  -
-  
 ## Junior Assesments
 
 - Skills
@@ -232,3 +126,27 @@
 | Work with CMS          | 6      |        |        |        |       |          |
 | Patterns - Structure   | 8      |        | 4      |        |       | 4        |
 | Patterns - Arch        | 6      |        |        |        |       | 4        |
+
+## Weekly Tasks
+
+- Problem Solving Task
+- Ui Task
+- session Task
+
+## Weekly Session
+
+- Technical Session
+- Skill Session
+
+## How To Seek a jop
+
+- Companies List (Categorized)
+  - TrianglZ LLC
+  - TurnDigital
+  - NAOS Marketing
+
+## Freelancing
+
+- manhr : 20$
+- portfolio
+- templates
