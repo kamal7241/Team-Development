@@ -1,0 +1,13 @@
+{
+  "name": "proxy",
+  "version": "1.0.0",
+  "description": "- Anit Pattern vs Design Pattern\r - What is Proxy\r - Why We need Proxy Pattern\r - How to implement Remote Proxy Pattern\r     - Client\r     - remote Object\r     - Proxy\r     - Communication bettween remote and Proxy (way , risks)\r     - stub (client helper ) and skeleton (remote helper ( service) )\r - Proxy Pattern Definition\r - Diagram\r - Types\r # Anit Pattern\r - \r # Proxy Pattern",
+  "main": "main.js",
+  "proxy":"localhost",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
