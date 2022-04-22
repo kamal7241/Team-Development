@@ -1,0 +1,1 @@
+[1,2,3].map(s=>s+1);class test{constructor(s){this.myVar=s}}
