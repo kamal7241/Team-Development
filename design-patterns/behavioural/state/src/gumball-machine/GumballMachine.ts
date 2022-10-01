@@ -1,93 +1,69 @@
+import { SoldoutState } from '../gumball-state/SoldoutState';
+import { NoQuarterState } from '../gumball-state/NoQuarterState';
+import {  HasQuarterState } from '../gumball-state/HasQuarterState';
+import { GumballState } from '../gumball-state/GumballState';
+import { SoldState } from '../gumball-state/SoldState';
 export class GumballMachine {
-    static readonly NO_QUARTER: number = 1;
-    static readonly SOLD_OUT: number = 2;
-    static readonly HAS_QUARTER: number = 3;
-    static readonly SOLD: number = 4;
-    state: number = GumballMachine.SOLD_OUT;
-    count:number = 0;
+    private hasQuarterState:GumballState;
+    private noQuarterState:GumballState;
+    private soldoutState:GumballState;
+    private soldState:GumballState;
+    private state: GumballState;
+    private count:number = 0;
 
     constructor(_count:number){
+        this.hasQuarterState = new HasQuarterState(this);
+        this.noQuarterState = new NoQuarterState(this);
+        this.soldoutState = new SoldoutState(this);
+        this.soldState = new SoldState(this);
+        this.state = this.soldoutState;
         this.count = _count;
         if(this.count)
-            this.state = GumballMachine.NO_QUARTER;
+            this.state = this.noQuarterState;
     }
+
+
     insertQuarter():void{
-        console.log("\x1b[1m" , "user try to insert quarter:" , "\x1b[1m" , "\x1b[0m")
-        switch(this.state){
-            case GumballMachine.HAS_QUARTER :
-                console.log("you can`t insert another quarter");
-            break;
-            case GumballMachine.NO_QUARTER :
-                this.state = GumballMachine.HAS_QUARTER;
-                console.log("you inserted a quarter");
-            break;
-            case GumballMachine.SOLD_OUT :
-                console.log("you can't insert a quarter, the machine sold out");
-            break;
-            case GumballMachine.SOLD :
-                console.log("Please wait , we're already giving you a gumball");
-        }
-
+        this.state.insertQuarter();
     }
 
-    ejectQuarter():void{
-        console.log("\x1b[1m" , "user try to eject quarter:" , "\x1b[1m" , "\x1b[0m")
-        switch(this.state){
-            case GumballMachine.HAS_QUARTER :
-                this.state = GumballMachine.NO_QUARTER
-                console.log("Quarter returned");
-            break;
-            case GumballMachine.NO_QUARTER :
-                console.log("You haven't inserted a quarter");
-            break;
-            case GumballMachine.SOLD_OUT :
-                console.log("you can't eject, You haven't inserted a quarter yet");
-            break;
-            case GumballMachine.SOLD :
-                console.log("Sorry, you already turned the cranck");
-        }
+    ejectQuarter():void{    
+        this.state.ejectQuarter();
     }
 
     turnCrank():void{
-        console.log("\x1b[1m" , "user start turning the crank: " , "\x1b[1m" , "\x1b[0m")
-        switch(this.state){
-            case GumballMachine.HAS_QUARTER :
-                console.log("You turned, please wait ...");
-                this.state = GumballMachine.SOLD;
-            break;
-            case GumballMachine.NO_QUARTER :
-                console.log("Sorry, you need to insert quarter");
-            break;
-            case GumballMachine.SOLD_OUT :
-                console.log("Sorry , but there are no gumballs");
-            break;
-            case GumballMachine.SOLD :
-                console.log("Turning twice dosen't get you another gumball!");
-        }
+        this.state.turnCrank();
     }
 
     dispenseGumball():void{
-        console.log("\x1b[1m" , "gumball dispense starts: " , "\x1b[1m" , "\x1b[0m")
-        switch(this.state){
-            case GumballMachine.HAS_QUARTER :
-                console.log("Please turn crack to get your gumball");
-            break;
-            case GumballMachine.NO_QUARTER :
-                    console.log("Please insert a quarter first");
-            break;
-            case GumballMachine.SOLD_OUT :
-                console.log("you can`t insert a quarter, the machine sold out");
-            break;
-            case GumballMachine.SOLD :
-                console.log("gumball comes rolling out the slot");
-                this.count--;
-                if(this.count)
-                    this.state = GumballMachine.NO_QUARTER
-                else {
-                    this.state = GumballMachine.SOLD_OUT;
-                    console.log("Oops , out of gumballs")
-                }
-            }
+        this.state.dispenseGumball();
     }
 
+    releaseBall(){
+        console.log("gumball comes rolling out the slot");
+        this.count--;
+    }
+    /* setters */
+    setState(_state:GumballState){
+        this.state = _state;
+    }
+    /* getters */
+    getState():GumballState{
+        return this.state;
+    }
+    getHasQuarterState():GumballState{
+        return this.hasQuarterState;
+    }
+    getNoQuarterState():GumballState{
+        return this.noQuarterState;
+    }
+    getSoldoutState():GumballState{
+        return this.soldoutState;
+    }
+    getSoldState():GumballState{
+        return this.soldState;
+    }
+    getCount():number{
+        return this.count;
+    }
 }
